@@ -34,22 +34,31 @@
             margin-left: 33px;
         }
         #date{
-            margin-left: 45px;
+            margin-left: 35px;
         }
         #pro{
-            margin-left: 10px;
+            margin-left: 1px;
+        }
+        #mob{
+            margin-left: 15px ;
+        }
+        #tel{
+            margin-left: 17px;
+        }
+        #add{
+            margin-left: 75px;
         }
     </style>
 </head>
 
 <body>
-    <form>
+    <form action="" method="">
         <fieldset id="for">
             <legend id="top">PERSONAL DETAILS</legend><br>
             <label>User Name</label>
             <input type="text" placeholder="eg.harshan"  required><br><br>
             <label>Password</label>
-            <input type="password" id="pas" required ><br><br>
+            <input type="password" placeholder="********" id="pas" required ><br><br>
             <label>Email</label>
             <input type="email" id="mail" placeholder="eg.harshan@gmail.com" required><br><br>
             <fieldset>
@@ -62,7 +71,7 @@
                 <label>Others</label>
             </fieldset><br>
             <label>Address</label><br>
-            <textarea placeholder="your address here!"></textarea><br><br>
+            <textarea id="add" placeholder="your address here!"></textarea><br><br>
             <input type="checkbox" required>
             <label>Remember Password</label><br><br>
             <label>DOB</label>
@@ -81,9 +90,9 @@
 
             </select><br><br>
             <label>Mob.No</label>
-            <input maxlength="10" pattern="[0-9]{10}" placeholder="eg.0123456789" required><br><br>
+            <input maxlength="10" id="mob" pattern="[0-9]{10}" placeholder="eg.0123456789" required><br><br>
             <label>Tele.No</label>
-            <input  maxlength="10" required placeholder="eg.123-1234-123" pattern="[0-4]{3}[0-9]{4}[0-9]{3}"><br>
+            <input  maxlength="10" id="tel" required placeholder="eg.123-1234-123" pattern="[0-4]{3}[0-9]{4}[0-9]{3}"><br>
         </fieldset>
         <button type="submit" id="button">SUBMIT</button>
 
