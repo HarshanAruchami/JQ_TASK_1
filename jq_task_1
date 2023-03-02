@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
+    <script>
+        // $(document).ready(function () {
+        //     $("#ha").hover(function () {
+        //         $("#hb")
+        //             .animate({ width: "30%" })
+        //             .animate({ height: "10%" })
+        //     });
+        // });
+        $(document).ready(function () {
+            $("#ha").hover(function () {
+                var img = $("#hb");
+                img.animate({ height: '2000px'}, "slow");
+                //img.animate({ width: '150px', opacity: '0.8' }, "slow");
+            });
+        });
+    </script>
+    <style>
+        #hb {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <img src="/assets/098396295eb1c3564bd2fb24223165a3.jpg" id="ha">
+        <img src="/assets/images (1).jpg" id="hb">
+    </div>
+</body>
+
+</html>
+------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #button {
+            background-color: black;
+            color: white;
+            padding: 8px;
+            border-radius: 20px;
+            margin-left: 640px;
+            margin-top: 30px;
+        }
+
+        #for {
+            background-color: darkgrey;
+
+        }
+
+        #top {
+            font-size: larger;
+            font-style: oblique;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        #pas {
+            margin-left: 10px;
+        }
+
+        #mail {
+            margin-left: 33px;
+        }
+
+        #date {
+            margin-left: 35px;
+        }
+
+        #pro {
+            margin-left: 1px;
+        }
+
+        #mob {
+            margin-left: 15px;
+        }
+
+        #tel {
+            margin-left: 17px;
+        }
+
+        #add {
+            margin-left: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Toggle effect -->
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("#form").toggle();
+            });
+        });
+    </script>
+    <button type="submit" id="toggle">REGISTER</button>
+    <form action="" method="" id="form">
+        <fieldset id="for">
+            <legend id="top">REGISTRATION FORM</legend><br>
+            <label>User Name</label>
+            <input type="text" placeholder="eg.harshan" required><br><br>
+            <label>Password</label>
+            <input type="password" placeholder="********" id="pas" required><br><br>
+            <label>Email</label>
+            <input type="email" id="mail" placeholder="eg.harshan@gmail.com" required><br><br>
+            <fieldset>
+                <input type="radio" name="gen" required>
+                <legend>GENDER</legend>
+                <label>Male</label>
+                <input type="radio" name="gen" required>
+                <label>Female</label>
+                <input type="radio" name="gen" required>
+                <label>Others</label>
+            </fieldset><br>
+            <label>Address</label><br>
+            <textarea id="add" placeholder="your address here!"></textarea><br><br>
+            <input type="checkbox" required>
+            <label>Remember Password</label><br><br>
+            <label>DOB</label>
+            <input type="date" id="date" required><br><br>
+            <label>Profession</label>
+            <select id="pro">
+                <optgroup label="Health">
+                    <option></option>
+                    <option>Doctor</option>
+                    <option>Physio</option>
+                </optgroup>
+                <optgroup label="IT">
+                    <option>Developer</option>
+                    <option>Designer</option>
+                </optgroup>
+
+            </select><br><br>
+            <label>Mob.No</label>
+            <input maxlength="10" id="mob" pattern="[0-9]{10}" placeholder="eg.0123456789" required><br><br>
+            <label>Tele.No</label>
+            <input maxlength="10" id="tel" required placeholder="eg.123-1234-123"
+                pattern="[0-4]{3}[0-9]{4}[0-9]{3}"><br>
+        </fieldset>
+        <button type="submit" id="button">SUBMIT</button>
+
+    </form>
+    <script>
+        $(document).ready(function () {
+            $("#login").click(function () {
+                $("#lform").toggle();
+            });
+        });
+    </script>
+
+    <button type="submit" id="login">LOGIN</button>
+    <form action="" method="" id="lform">
+        <fieldset id="for">
+            <legend id="top">LOGIN FORM</legend><br>
+            <label>User Name</label>
+            <input type="text" placeholder="eg.harshan" required><br><br>
+            <label>Password</label>
+            <input type="password" placeholder="********" id="pas" required><br><br>
+            <button type="submit" id="button">SUBMIT</button>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
