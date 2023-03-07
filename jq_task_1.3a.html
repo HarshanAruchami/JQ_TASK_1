@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>jquery</title>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <style>
+  #colorchange {
+   background-color: rgb(12, 223, 93);
+   color: #fff;
+   text-align: center;
+   font-size: 20px;
+  }
+ </style>
+</head>
+
+<body id="colorchange">
+ <script>
+  $(document).ready(function () {
+   $("#bttn").click(function () {
+    $("#colorchange").css({ backgroundColor: "black" });
+   });
+  });
+ </script>
+ <h1>Change the background of the document.</h1>
+ <button id="bttn">Dark Mode</button>
+
+</body>
+
+</html>
