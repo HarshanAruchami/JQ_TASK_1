@@ -7,9 +7,10 @@
  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
  <style>
-  h3{
+  h3 {
    color: black;
   }
+
   .accordion {
    border: 1px solid #070505;
    margin: 20px;
@@ -30,7 +31,7 @@
    background-color: rgb(91, 7, 7);
   }
 
-  .product-input {
+  .products{
    width: 300px;
    padding: 10px;
    margin: 20px;
@@ -42,22 +43,22 @@
  <div class="accordion">
   <h3>Mobile Phones</h3>
   <div class="panel">
-   <img src="./assets/mobpic.jpeg" />
-   <img src="./assets/blackmob.jpeg" />
+   <img src="./assets/mobpic.jpeg" width="100px" height="100px">
+   <img src="./assets/blackmob.jpeg" width="100px" height="100px">
   </div>
   <h3>Laptops</h3>
   <div class="panel">
-   <img src="asset/pngimg.com - laptop_PNG5905.png" width="300px" />
-   <img src="./asset/images (2).jpg" />
+   <img src="./assets/laptop1.jpeg" width="100px" height="100px">
+   <img src="./assets/laptop2.jpg" width="100px" height="100px">
   </div>
  </div>
- <input type="text" id="product-input" class="product-input" placeholder="Search Products" />
+ <input type="text" id="product-input" class="products" placeholder="Search Products" />
  <script>
   $(document).ready(function () {
 
    $(".accordion").accordion();
 
-   var products = [
+   const products = [
     "Mobile Phone",
     "Laptop",
     "Tablet",
